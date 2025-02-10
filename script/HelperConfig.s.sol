@@ -59,12 +59,12 @@ contract HelperConfig is CodeConstants,Script{
 
     function getSepoliaEthConfig () public pure returns(NetworkConfig memory) {
         return NetworkConfig( {
-            entranceFee: 0.01 ether,
+            entranceFee: 0.01 ether,    
             interval: 30,
-            vrfCoordinator: 0x8103B0A8A00be2DDC778e6e7eaa21791Cd364625,
+            vrfCoordinator: 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B,
             gasLane: 0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c,
             callbackGasLimit: 500000,
-            subscriptionID: 12265,
+            subscriptionID: 61636622198041075945159848815591503836449750359887027646361660113437689092736,
             link: 0x779877A7B0D9E8603169DdbD7836e478b4624789,
             account: 0x7370712d10a32587B6ADDE48e510a98dc739250a
         });

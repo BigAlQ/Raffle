@@ -10,7 +10,7 @@ import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";
 
 
 
-contract CreateSubscription is Script, CodeConstants{
+contract CreateSubscription is CodeConstants, Script {
     function createSubscriptionUsingConfig() public returns(uint256, address){
         HelperConfig helperConfig = new HelperConfig();
         address vrfCoordinator = helperConfig.getConfig().vrfCoordinator;

@@ -65,6 +65,10 @@ Go to [automation.chain.link](https://automation.chain.link/new) and register a 
 
 After deploying to a testnet or local net, you can run the scripts.
 
+```
+source .env
+```
+
 Using cast deployed locally example:
 
 ```
