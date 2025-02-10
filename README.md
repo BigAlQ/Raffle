@@ -71,6 +71,15 @@ source .env
 
 Using cast deployed locally example:
 
+
+create a .env file and add your own spepolia rpc url and private key and etherscan API key like this
+```
+SEPOLIA_RPC_URL=https://YOUR_SEPOLIA_RPC_URL
+ETHERSCAN_API_KEY=YOUR_ETHERSCAN_API_KEY
+PRIVATE_KEY=YOUR_PRIVATE_KEY
+
+```
+
 ```
 cast send <RAFFLE_CONTRACT_ADDRESS> "enterRaffle()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
 ```
