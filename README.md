@@ -47,6 +47,17 @@ Head over to [faucets.chain.link](https://faucets.chain.link/) and get some test
 
 2. Deploy
 
+make sure you change the account name in the deploy-sepolia command in the make file 
+```
+forge script script/DeployRaffle.s.sol:DeployRaffle --rpc-url $(SEPOLIA_RPC_URL) --account PUT_YOUR_ACCOUNT_NAME_HERE --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
+```
+
+(to find your accounts, type this in the CLI)
+```
+cast wallet list
+```
+
+
 ```
 make deploy ARGS="--network sepolia"
 ```

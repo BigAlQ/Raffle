@@ -92,6 +92,7 @@ contract CreateSubscription is CodeConstants, Script {
             console.log("Adding consumer contract ,", contractToAddToVRF);
             console.log("To vrf coordinator ,", vrfCoordinator);
             console.log("On chain ID , ", block.chainid);
+            console.log("Your address is", msg.sender);
             vm.startBroadcast(account);
             VRFCoordinatorV2_5Mock(vrfCoordinator).addConsumer(subId, contractToAddToVRF);
             vm.stopBroadcast();
